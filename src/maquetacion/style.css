@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  display: flex;
+}
+
+.sub-container {
+  width: 85%;
+  background: #f5f6f9;
+}
+
+.drawer {
+  width: 250px;
+  height: 100vh;
+  background: rebeccapurple;
+}
+
+.header {
+  height: 70px;
+  background: #03dac5;
+}
+
+.name {
+  width: 40%;
+  height: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #2276bb;
+  background: #fff;
+  border-radius: 25px;
+  padding: 0.9% 2%;
+  margin: 3% 0 3% 5%;
+}
+
+.container-graph {
+  margin: auto;
+  width: 90%;
+}
+
+.container-graph > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-graph > div > p {
+  margin-bottom: 3%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff7900;
+}
+
+.indicators-filter {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 300px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.indicators-filter > img {
+  width: 18px;
+  margin-right: 12px;
+}
+
+.indicator-chart {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 200px;
+  background: #ffffff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.results {
+  margin-top: 3%;
+}
+
+.report-search {
+  justify-content: flex-end !important;
+}
+
+.report-search > div {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 1.5%;
+  background: linear-gradient(0deg, #ff7900, #ff7900);
+  border-radius: 25px;
+  margin-right: 4%;
+  cursor: pointer;
+}
+
+.report-search > div > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.report-search > div > button {
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* .report-search > div:hover {
+  cursor: pointer;
+} */
+
+.search {
+  width: 300px;
+  height: 45px;
+  background: #ffffff !important;
+  border-radius: 25px;
+  padding: 1% 2%;
+}
+
+
+/* 
+.search > input {
+  padding: 3% 5%;
+  border-radius: 25px;
+} */
