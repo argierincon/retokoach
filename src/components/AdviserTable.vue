@@ -46,7 +46,7 @@ export default {
       ],
       desserts: [
         {
-          picture: "prueba",
+          picture: "https://media-public.canva.com/MI8RY/MAD6D6MI8RY/1/tl.png",
           name: this.$route.params.name,
           estado: "#57d868",
           carita: "mdi-emoticon-happy",
