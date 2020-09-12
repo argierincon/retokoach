@@ -1,19 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./maquetacion/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="drawer">
+    </div>
+    <section class="sub-container">
+      <div class="header">
+      </div>
+
+      <div class="name">
+        <p>Hola Jimena,</p>
+      </div>
+
+      <section class="container-graph">
+        <div>
+          <p>Panel de indicadores</p>
+
+          <div class="indicators-filter">
+            <img src="./assets/img/filter.png" alt="filter">
+            <span>Filtrar mis Indicadores</span>
+          </div>
+        </div>
+
+        <div class="indicator-chart">
+          <div class="graph">
+            <p>Cantidad de ventas por hora</p>
+            <img src="./assets/img/Group 1135.png" alt="grafico1">
+          </div>
+
+          <div class="graph">
+            <p>Cantidad de ventas por hora</p>
+            <img src="./assets/img/Group 1136.png" alt="grafico1">
+          </div>
+
+          <div class="graph">
+            <p>Cantidad de ventas por hora</p>
+            <img src="./assets/img/Group 1137.png" alt="grafico1">
+          </div>
+
+          <div class="graph">
+            <p>Cantidad de ventas por hora</p>
+            <img src="./assets/img/Group 1138.png" alt="grafico1">
+          </div>
+        </div>
+      </section>
+
+      <section class="container-graph results">
+        <div>
+          <p>Resultados del Equipo</p>
+        </div>
+        <div class="report-search">
+          <div>
+            <img src="./assets/img/excel.png" alt="excel icon">
+            <button>Generar Reporte</button>
+          </div>
+          <div class="search">
+            <img src="./assets/img/search.png" alt="lupa">
+            <input type="text" placeholder="Buscar">
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <th>Img</th>
+            <th>Nombre y Apellido</th>
+            <th>Estado</th>
+            <th>AHT</th>
+            <th>V. Acum.</th>
+            <th>V. Conc.</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>img</td>
+              <td>Juan Fajardo </td>
+              <td>img</td>
+              <td>75%</td>
+              <td>280</td>
+              <td>60</td>
+              <td>btn</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="sec-button">
+          Crear Diagnóstico
+        </button>
+
+        <section class="btn-back">
+          <img src="./assets/img/back.png" alt="volver">
+          <button>Regresar</button>
+        </section>
+
+        <section class="item-drawer">
+          <img src="./assets/img/home.svg" alt="inicio">
+          <p>Inicio</p>
+        </section>
+
+
+      </section>
+
+    </section>
+  </section>
+
+</body>
+
 </html>

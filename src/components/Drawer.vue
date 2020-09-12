@@ -1,56 +1,69 @@
 <template>
-  <v-card
-    height="400"
-    width="256"
-    class="mx-auto"
-  >
-    <v-navigation-drawer permanent>
-      <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="title">
-            Application
-          </v-list-item-title>
-          <v-list-item-subtitle>
-            subtext
-          </v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-divider></v-divider>
-
-      <v-list
-        dense
-        nav
-      >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-  </v-card>
+  <div class="drawer">
+    <div class="logo">
+      <img src="../assets/img/koaching-logo.png" alt="koaching logo" />
+    </div>
+    <div class="user-data">
+      <img src="../assets/img/user-one.png" alt="usuario logueado" />
+      <p>Jimena Lozano</p>
+    </div>
+    <div>
+      <ItemDrawer icon="mdi-home" item="Inicio" />
+      <ItemDrawer icon="mdi-account-multiple" item="Seguimientos" />
+      <ItemDrawer icon="mdi-bell" item="Notificaciones" />
+      <ItemDrawer icon="mdi-account" item="Perfil" />
+      <ItemDrawer icon="mdi-location-exit" item="Cerrar Sesión" />
+    </div>
+  </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
-        ],
-        right: null,
-      }
-    },
-  }
+import ItemDrawer from "../components/ItemDrawer";
+export default {
+  components: {
+    ItemDrawer,
+  },
+};
 </script>
+
+<style>
+.drawer {
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.logo > img {
+  width: 100px;
+  margin: auto;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2276bb;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.user-data > img {
+  width: 150px;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+.items-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</style>

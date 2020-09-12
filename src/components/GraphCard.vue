@@ -1,7 +1,7 @@
 <template>
   <div class="graph">
     <p>{{name}}</p>
-    <img src="../assets/img/Group 1135.png" alt="grafico1" />
+    <slot />
   </div>
 </template>
 
@@ -9,12 +9,13 @@
 export default {
   props: {
     name: String,
-  }
+  },
 };
 </script>
 
 <style>
 .graph {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,10 +23,14 @@ export default {
   width: 20%;
   height: 220px;
   background: #ffffff;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
+}
+
+.graph > p {
+  width: 85%;
 }
 </style>

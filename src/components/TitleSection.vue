@@ -12,7 +12,6 @@ export default {
 
 <style>
 .title-section {
-  margin-bottom: 3%;
   font-size: 28px;
   font-weight: bold;
   color: #ff7900;

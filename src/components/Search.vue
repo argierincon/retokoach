@@ -13,11 +13,12 @@
   height: 45px;
   background: #ffffff !important;
   border-radius: 25px;
-  padding: 1% 2%;
+  padding: 1.5% 3%;
+  box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 .search > img {
-  width: 10%;
+  width: 8%;
   margin-right: 10px;
 }
 

@@ -5,10 +5,21 @@
       <IndicatorsFilter />
     </div>
     <div class="indicator-chart">
-      <GraphCard name="Cantidad de ventas por hora" />
-      <GraphCard name="AHT" />
-      <GraphCard name="Ventas Acumuladas" />
-      <GraphCard name="Ventas Concretadas" />
+      <GraphCard name="Cantidad de ventas por hora">
+        <img src="../assets/img/graph-1.png" />
+      </GraphCard>
+
+      <GraphCard name="AHT">
+        <img src="../assets/img/graph-2.png" />
+      </GraphCard>
+
+      <GraphCard name="Ventas Acumuladas">
+        <img src="../assets/img/graph-3.png" />
+      </GraphCard>
+      
+      <GraphCard name="Ventas Concretadas">
+        <img src="../assets/img/graph-4.png" />
+      </GraphCard>
     </div>
   </section>
 </template>
@@ -35,7 +46,9 @@ export default {
 
 .items-graph {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 4%;
 }
 
 .indicator-chart {
